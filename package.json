@@ -1,0 +1,45 @@
+{
+  "name": "amazeui-rating",
+  "version": "0.0.1",
+  "description": "Amaze UI风格的评分插件",
+  "main": "dist/amazeui.rating.min.js",
+  "style": "dist/amazeui.rating.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/photino/amazeui-rating.git"
+  },
+  "keywords": [
+    "amazeui-plugin",
+    "amaze-ui",
+    "AMUI",
+    "rating",
+    "jquery-plugin"
+  ],
+  "author": {
+    "name": "Zan Pan",
+    "email": "panzan89@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/photino/amazeui-rating/issues"
+  },
+  "homepage": "http://photino.github.io/amazeui-rating/",
+  "license": "MIT",
+  "devDependencies": {
+    "amazeui-doc-util": "latest",
+    "amazeui-gulp-tasks": "latest",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "amazeui": "^2.7.0"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  }
+}
