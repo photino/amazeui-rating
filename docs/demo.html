@@ -19,7 +19,7 @@
   <script src="http://cdn.amazeui.org/jquery/2.1.4/jquery.min.js"></script>
   <script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.min.js"></script>
   <!--<![endif]-->
-  <link rel="stylesheet" href="../dist/amazeui-rating.min.css"/>
+  
 </head>
 <body class="am-plugin">
 <!--[if lte IE 8 ]>
@@ -49,7 +49,78 @@
 
 <section class="amp-main">
   <div class="am-container amp-content">
-    <h2><a name="rating-shi-yong-yan-shi" class="anchor" href="#rating-shi-yong-yan-shi"><span class="header-link"></span></a>Rating 使用演示</h2>
+    <h2><a name="rating-shi-yong-yan-shi" class="anchor" href="#rating-shi-yong-yan-shi"><span class="header-link"></span></a>Rating 使用演示</h2><h3><a name="wu-ping-fen" class="anchor" href="#wu-ping-fen"><span class="header-link"></span></a>无评分</h3><div class="doc-example"><form data-am-rating>
+  <input type="hidden" name="score">
+  <a class="am-padding-lg" role="button">
+    <i class="am-icon-star-o"></i>
+    <i class="am-icon-star-o"></i>
+    <i class="am-icon-star-o"></i>
+    <i class="am-icon-star-o"></i>
+    <i class="am-icon-star-o"></i>
+ </a>
+</form></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">data-am-rating</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"score"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-padding-lg"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre></div><h3><a name="you-ping-fen-5fen-zhi-" class="anchor" href="#you-ping-fen-5fen-zhi-"><span class="header-link"></span></a>有评分（5分制）</h3><div class="doc-example"><form data-am-rating>
+  <input type="hidden" name="score">
+  <a class="am-padding-lg" data-am-icons="heart-o,heart" data-am-score="2" role="button">
+    <i class="am-icon-heart"></i>
+    <i class="am-icon-heart"></i>
+    <i class="am-icon-heart-o"></i>
+    <i class="am-icon-heart-o"></i>
+    <i class="am-icon-heart-o"></i>
+ </a>
+</form></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">data-am-rating</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"score"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-padding-lg"</span> <span class="hljs-attr">data-am-icons</span>=<span class="hljs-string">"heart-o,heart"</span> <span class="hljs-attr">data-am-score</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-heart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-heart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-heart-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-heart-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-heart-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre></div><h3><a name="you-ping-fen-10fen-zhi-" class="anchor" href="#you-ping-fen-10fen-zhi-"><span class="header-link"></span></a>有评分（10分制）</h3><div class="doc-example"><form id="rating">
+  <input type="hidden" name="score">
+  <a class="am-padding-lg" role="button">
+    <i class="am-icon-star"></i>
+    <i class="am-icon-star"></i>
+    <i class="am-icon-star"></i>
+    <i class="am-icon-star-half-empty"></i>
+    <i class="am-icon-star-o"></i>
+ </a>
+</form></div><script>
+  $(function() {
+    $('#rating').rating({
+      icons: ['star-o', 'star-half-empty', 'star'],
+      score: 3.6
+    });
+  });
+</script>
+
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"score"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-padding-lg"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-half-empty"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-icon-star-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">&lt;script&gt;
+  $(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">'#rating'</span>).rating({
+      <span class="hljs-attr">icons</span>: [<span class="hljs-string">'star-o'</span>, <span class="hljs-string">'star-half-empty'</span>, <span class="hljs-string">'star'</span>],
+      <span class="hljs-attr">score</span>: <span class="hljs-number">3.6</span>
+    });
+  });
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></code></pre></div><script src="../dist/amazeui.rating.min.js"></script>
+
 
     <nav class="amp-pager">
     </nav>

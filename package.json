@@ -1,6 +1,6 @@
 {
   "name": "amazeui-rating",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Amaze UI风格的评分插件",
   "main": "dist/amazeui.rating.min.js",
   "style": "dist/amazeui.rating.min.css",

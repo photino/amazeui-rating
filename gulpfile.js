@@ -37,8 +37,7 @@ var config = {
     data: {
       pluginTitle: 'Amaze UI Rating',
       pluginDesc: 'Amaze UI风格的评分插件',
-      buttons: 'photino/amazeui-rating',
-      head: '<link rel="stylesheet" href="../dist/amazeui-rating.min.css"/>'
+      buttons: 'photino/amazeui-rating'
     },
     rename: function(file) {
       file.basename = file.basename.toLowerCase();
@@ -53,16 +52,6 @@ var config = {
       }
       return 'docs';
     }
-  },
-
-  // compile less
-  less: {
-    src: './src/amazeui.rating.less',
-    dist: './dist',
-    autoPrefixer: {
-      browsers: ['> 1%', 'IE 9']
-    },
-    banner: true
   },
 
   // uglify js
@@ -85,7 +74,7 @@ gulp.task('copy', function() {
 });
 
 gulp.task('build', function (callback) {
-  runSequence('clean', ['copy', 'uglify', 'less',  'markdown'], callback);
+  runSequence('clean', ['copy', 'uglify',  'markdown'], callback);
 });
 
 gulp.task('default', ['build', 'server']);
