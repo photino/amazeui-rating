@@ -75,15 +75,6 @@ title: Amaze UI Rating 使用演示
 </form>
 `````
 
-<script>
-  $(function() {
-    $('#rating').rating({
-      icons: ['star-o', 'star-half-empty', 'star'],
-      score: 3.6
-    });
-  });
-</script>
-
 ```html
 <form>
   <input type="hidden" name="score">
@@ -108,3 +99,11 @@ title: Amaze UI Rating 使用演示
 ```
 
 <script src="../dist/amazeui.rating.min.js"></script>
+<script>
+  $(function() {
+    $('#rating').rating({
+      icons: ['star-o', 'star-half-empty', 'star'],
+      score: 3.6
+    });
+  });
+</script>
