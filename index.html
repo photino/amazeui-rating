@@ -19,7 +19,7 @@
   <script src="./dist/jquery.min.js"></script>
   <script src="./dist/amazeui.min.js"></script>
   <!--<![endif]-->
-  <link rel="stylesheet" href="../dist/amazeui-rating.min.css"/>
+  
 </head>
 <body class="am-plugin">
 <!--[if lte IE 8 ]>
@@ -59,18 +59,16 @@
 <li>使用 NPM: <code>npm install amazeui-rating</code></li>
 </ul>
 </li>
-<li><p>在 Amaze UI 样式之后引入 Rating 样式（<code>dist</code> 目录下的 CSS）：</p>
-<p>Amaze UI Rating 依赖 Amaze UI 样式。</p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/amazeui.min.css"</span>/&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/amazeui.rating.min.css"</span>/&gt;</span></code></pre></div></li>
 <li><p>引入 Rating 插件（<code>dist</code> 目录下的 JS）：</p>
 <div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/amazeui.rating.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div></li>
 <li><p>初始化 Rating:</p>
 <p>Amaze UI Rating 也支持Data API。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  $(<span class="hljs-string">'.am-rating'</span>).rating({
-    <span class="hljs-attr">icons</span>: [<span class="hljs-string">'star-o'</span>, <span class="hljs-string">'star'</span>]
+  $(<span class="hljs-string">'#rating'</span>).rating({
+    <span class="hljs-attr">icons</span>: [<span class="hljs-string">'star-o'</span>, <span class="hljs-string">'star'</span>],
+    <span class="hljs-attr">scale</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-attr">score</span>: <span class="hljs-number">2</span>
   });
 });</code></pre></div></li>
 </ol>
